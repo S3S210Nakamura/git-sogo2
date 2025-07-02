@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿児島県へようこそ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-image: url('kagoshima.jpg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style: none;
+        }
+        .content li {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+        .content li + li{
+            margin-top: 40px;
+        }
+        .restaurant__list-text {
+            width: 60%;
+        }
+        .restaurant__list-img {
+            width: 40%;
+            margin-right: 40px;
+        }
+        .restaurant__list-img figure {
+            width: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+        .restaurant__list-img figure img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .restaurant__list-imgtext {
+            margin: 10px 0;
+            text-align: left;
+            overflow-wrap: anywhere;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>鹿児島県へようこそ</h1>
+    </header>
+    <nav>
+        <a href="#tourist">観光スポット</a>
+        <a href="#restaurants">おすすめの飲食店</a>
+        <a href="#history">鹿児島の歴史</a>
+    </nav>
+    <div class="content">
+        <section>
+            <ul>
+                <li>
+                    <div class="restaurant__list-text">
+                        <h2>寺田屋事件</h2>
+                        <p>1862(文久2)年4月23日，京都近郊の伏見の寺田屋で，薩摩藩尊攘派志士が殺害された出来事です。<br>
+                            当時上洛中の島津久光の意図は雄藩連合・公武合体にありましたが，藩士有馬新七らはこれを機に挙兵討幕を企て，関白九条尚忠，京都所司代酒井忠義の殺害を計画して寺田屋に集結しました。<br>
+                            これを知った久光は鎮撫のため，奈良原喜八郎ら9人を派遣したところ，両者は激しい論争ののち乱闘に及び，有馬ら6人は倒れました。<br>
+                            この乱闘は討つ者も討たれる者も同じ薩摩藩士でした。なお，若年の大山巌，三島通庸，西郷従道，篠原国幹など明治の元勲も参加していました。</p>
+                    </div>
+                    <div class="restaurant__list-img">
+                        <figure>
+                            <img src="./history_img01.gif" alt="">
+                        </figure>
+                        <p class="restaurant__list-imgtext">出典：鹿児島県公式ホームページ<br><a href="https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html">https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html</a></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 KCS鹿児島観光協会</p>
+    </footer>
+</body>
+</html>
