@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>観光スポット | 鹿児島県へようこそ</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-image: url('kagoshima.jpg');
+      background-size: cover;
+      color: black;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .spot {
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .spot img {
+      width: 100%;
+      height: auto;
+    }
+    .spot-content {
+      padding: 15px;
+    }
+    .spot-content h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+    }
+    .spot-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>鹿児島の観光スポット</h1>
+  </header>
+  <nav>
+    <a href="index.html">トップページ</a>
+    <a href="restaurant.html">飲食店</a>
+    <a href="history.html">歴史</a>
+  </nav>
+  <div class="container">
+    <div class="spot">
+      <img src="sakurajima.jpg" alt="桜島">
+      <div class="spot-content">
+        <h2>桜島</h2>
+        <p>鹿児島の象徴、桜島（さくらじま）は錦江湾に浮かぶ活火山で、日本でも最も活動が活発な火山の一つです。1914年の大正噴火によって大隅半島とつながり、今では半島のような地形となっています。
+          標高約1,117メートルの山頂からは、今も噴煙が立ち上り、鹿児島市内の至る所からその姿を望むことができます。市民にとっては、親しみと畏れの両方を感じさせる存在です。
+          「溶岩なぎさ遊歩道」では溶岩原を歩くことができ、「桜島ビジターセンター」では噴火の歴史を学べます。足湯が楽しめる温泉施設もあり、自然と触れ合いながら火山の営みを体感できます。
+          また、桜島大根や桜島小みかんなどの特産品も有名で、地域の暮らしと深く結びついています。自然と人々の知恵が共存する“生きている火山”の風景を、ぜひ感じてみてください。<br>
+          写真協力：ぱくたそ
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 KCS鹿児島観光協会</p>
+  </footer>
+</body>
+</html>
